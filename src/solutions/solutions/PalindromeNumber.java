@@ -7,14 +7,15 @@ public class PalindromeNumber {
         boolean result = true;
         String str = Integer.toString(x);
         int length = str.length();
-        for (int i = 0; i <= (length/2) - 1; i++) {
-            if(str.charAt(i) != str.charAt(length-i-1)) {
+        for (int i = 0; i <= (length / 2) - 1; i++) {
+            if (str.charAt(i) != str.charAt(length - i - 1)) {
                 result = false;
                 break;
             }
         }
         return result;
     }
+
     public static void main(String[] args) {
         System.out.println(isPalindrome(100));
     }
